@@ -21,7 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req,res) =>{
-    return res.render("home");
+    return res.render("signup");
 })
 
 app.use("/user",userRoute);
