@@ -54,7 +54,7 @@ router.post("/signin", async (req, res) => {
 
 router.get("/logout", (req, res) => {
   res.clearCookie("token", { path: "/" }); // Matches cookie path
-  res.redirect("/user/signin");
+  res.redirect("/user/signup");
 });
 
 module.exports = router;
