@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>SignIn</title>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+
+    <form action="/blog/create" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="form-label">title</label>
+        <input
+          type="title"
+          class="form-control"
+          name="title"
+          id="title"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="para" class="form-label">para</label>
+        <input type="para" name="para" class="form-control" id="para" />
+      </div>
+
+      <div class="mb-3">
+    <label for="image" class="form-label">Upload Image</label>
+    <input type="file" name="image" class="form-control" id="image" />
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <%- include("./partials/script") %>
+  </body>
+</html>
